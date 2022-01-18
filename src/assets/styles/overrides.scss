@@ -1,0 +1,16 @@
+.form-control {
+  font-size: 14px !important;
+  padding: 2px 5px !important;
+}
+.card-img-top {
+  width: 100px;
+  border-radius: 5px;
+}
+.card {
+  transition-duration: 0.3s;
+  &:hover {
+    box-shadow: 0px 5px 20px rgba(86, 86, 86, 0.15);
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px);
+  }
+}

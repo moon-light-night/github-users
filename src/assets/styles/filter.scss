@@ -1,0 +1,78 @@
+.filters {
+  display: flex;
+  justify-content: space-around;
+  &-title {
+    font-size: 18px;
+    text-align: center;
+  }
+  &-fields {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    &_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &-switcher {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      &-btn {
+        font-size: 14px;
+        height: max-content;
+        display: flex;
+        align-self: center;
+      }
+    }
+    &_item-inputs-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 0 15px;
+    &_input {
+      width: 75px;
+    }
+    &_title {
+      font-size: 16px;
+      text-align: center;
+    }
+    &_fields {
+      display: flex;
+      justify-content: space-between;
+    }
+    &_fields-label {
+      font-size: 14px;
+    }
+  }
+  &-radio {
+    &-btn {
+      display: inline-block;
+      & input[type=radio] {
+        display: none;
+      }
+      & label {
+        display: inline-block;
+        cursor: pointer;
+        padding: 0px 15px;
+        line-height: 34px;
+        border: 1px solid #999;
+        border-radius: 6px;
+        user-select: none;
+        &:hover {
+          color: #666;
+        }
+      }
+      & input[type=radio]:checked + label {
+        background: #ffe0a6;
+      }
+    }
+  }
+}
