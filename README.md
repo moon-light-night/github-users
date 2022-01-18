@@ -1,6 +1,11 @@
 # github-users
 
-## Project setup
+## Project view
+```
+https://github-users-d8c64.web.app
+```
+
+### Project setup
 ```
 npm install
 ```
